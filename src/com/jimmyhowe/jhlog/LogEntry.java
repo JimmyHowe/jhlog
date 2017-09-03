@@ -5,7 +5,7 @@ package com.jimmyhowe.jhlog;
  *
  * @author Jimmy Howe
  */
-public class LogEntry implements HasEntry
+public class LogEntry
 {
     /**
      * Type of entry
