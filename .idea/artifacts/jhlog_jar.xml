@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="jhlog:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/jhlog_jar</output-path>
+    <root id="archive" name="jhlog.jar">
+      <element id="module-output" name="jhlog" />
+    </root>
+  </artifact>
+</component>
