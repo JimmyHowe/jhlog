@@ -1,7 +1,5 @@
 package com.jimmyhowe.jhlog;
 
-import com.jimmyhowe.colorconsole.Console;
-
 import java.util.ArrayList;
 import java.util.LinkedHashMap;
 import java.util.List;
@@ -138,17 +136,6 @@ public class Log
     public LogEntry getLastEntry()
     {
         return logEntries.get(logEntries.size() - 1);
-    }
-
-    /**
-     * Sets the default modifiers
-     */
-    public void loadDefaultFilters()
-    {
-        onNote(Console::white);
-        onInfo(Console::cyan);
-        onDebug(Console::yellow);
-        onError(message -> Console.red(message.toUpperCase()));
     }
 
     /**
