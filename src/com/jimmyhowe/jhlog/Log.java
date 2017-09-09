@@ -130,6 +130,16 @@ public class Log
         return logEntries;
     }
 
+    public String getMessageAt(int i)
+    {
+        return getLogEntries().get(i).getMessage();
+    }
+
+    public String getRawMessageAt(int i)
+    {
+        return getLogEntries().get(i).getRawMessage();
+    }
+
     /**
      * @return The last entry
      */

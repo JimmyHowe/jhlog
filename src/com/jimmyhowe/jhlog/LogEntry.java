@@ -57,4 +57,14 @@ public class LogEntry
     {
         return message;
     }
+
+    @Override
+    public String toString()
+    {
+        return "LogEntry{" +
+                "type='" + type + '\'' +
+                ", message='" + message + '\'' +
+                ", modifier=" + modifier +
+                '}';
+    }
 }
