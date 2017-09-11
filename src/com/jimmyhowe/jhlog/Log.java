@@ -148,6 +148,36 @@ public class Log
     }
 
     /**
+     * @param index Index
+     *
+     * @return Type
+     */
+    public String getTypeAt(int index)
+    {
+        return logEntries.get(index).getType();
+    }
+
+    /**
+     * @param index Index
+     *
+     * @return Message
+     */
+    public String getMessageAt(int index)
+    {
+        return logEntries.get(index).getMessage();
+    }
+
+    /**
+     * @param index Index
+     *
+     * @return Raw message
+     */
+    public String getRawMessageAt(int index)
+    {
+        return logEntries.get(index).getRawMessage();
+    }
+
+    /**
      * outputs to console
      */
     public void toConsole()
