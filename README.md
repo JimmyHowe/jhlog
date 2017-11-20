@@ -1,2 +1,46 @@
-# jhlog
-Java Logging Library
+# JHLOG: Java Logging Library
+
+## Usage
+
+    Log log = new Log();
+    
+    log.note("note");
+    log.info("info");
+    log.debug("debug");
+    log.error("error");
+    
+    List<LogEntry> logEntries = log.getLogEntries();
+    
+## Modifiers
+
+    Log log = new Log();
+    
+    log.onNote(message -> "> " + message);
+
+    log.note("note"); // Produces "> note"
+    
+## Outputting to console
+
+    Log log = new Log();
+    
+    log.onNote(message -> {
+        System.out.println(message);
+        return message;
+    });
+
+## Extending
+
+    private class QueryLog extends Log
+    {
+        public static final String QUERY = "QUERY";
+
+        public void onQuery(Modifier modifier)
+        {
+            group(QUERY, modifier);
+        }
+
+        public void query(String message)
+        {
+            group(QUERY, message);
+        }
+    }
