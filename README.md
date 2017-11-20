@@ -28,6 +28,16 @@
         return message;
     });
 
+## Helper Functions
+
+    getLastEntry()              // Returns the last entry
+    getTypeAt(int index)        // Gets type at index
+    getMessageAt(int index)     // Gets message at index
+    getRawMessageAt(int index)  // return unmodified message
+    
+    toConsole()                 // Outputs log to console
+    toConsole(String group)     // Outputs log by group to console
+
 ## Extending
 
     private class QueryLog extends Log

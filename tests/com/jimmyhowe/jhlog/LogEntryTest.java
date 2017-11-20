@@ -61,17 +61,6 @@ class LogEntryTest
         assertEquals("SELECT * FROM USERS", queryLog.getLastEntry().getMessage());
     }
 
-    @Test
-    void it_can_output_to_screen()
-    {
-        Log log = new Log();
-
-        log.onNote(message -> {
-            System.out.println(message);
-            return message;
-        });
-    }
-
     private class QueryLog extends Log
     {
         public static final String QUERY = "QUERY";
