@@ -1,6 +1,8 @@
 package com.jimmyhowe.jhlog;
 
+import org.jetbrains.annotations.NotNull;
+
 public interface Modifier
 {
-    String run(String message);
+    @NotNull String run(String message);
 }
